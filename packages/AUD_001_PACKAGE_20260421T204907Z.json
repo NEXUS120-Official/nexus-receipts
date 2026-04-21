@@ -1,0 +1,100 @@
+{
+  "block_reference": 261742392,
+  "live_state": {
+    "block_number": 261742392,
+    "collateral_ratio": 2.379701,
+    "collateral_ratio_pct": 237.97,
+    "eth_price_usd": 2315.32,
+    "liquidation_engine_paused": false,
+    "oracle_stale": false,
+    "price_source": "oracle",
+    "total_collateral_eth": 8.223973857580988,
+    "total_debt_nxusd": 8001.4808,
+    "vault_paused": false
+  },
+  "overall_verdict": "WARN",
+  "package_hash": "471cbbd857abd4eebbf3ea0cfbdc3aa7e67edb64150145f614c987a1070924b6",
+  "package_id": "AUD_001",
+  "receipt_index": [
+    {
+      "file": "receipts/live_pillars/constitution/constitution_1776804546_ff40af2ee94b.json",
+      "hash": "ff40af2ee94b710577b659155fcd80d769c002009484c0a0ea7ccc35b83a5196",
+      "pillar": "SOV_001"
+    },
+    {
+      "file": "receipts/live_pillars/capital_law/CAP_LIVE_RECEIPT_SOV_003_LIVE_CHAIN_20260421T204906Z.json",
+      "hash": "249cefcd5da3f5ff92a44d7abdb2acfc3c948a8885eb11d85e79e972b5ea931f",
+      "pillar": "SOV_003"
+    },
+    {
+      "file": "receipts/live_pillars/risk_lattice/RL_LIVE_MASTER_SOV_005_LIVE_CHAIN_20260421T204907Z.json",
+      "hash": "3d0a293faf2876f95340c1f5934211129604efed49e07443b799bb7bcf6e5b76",
+      "pillar": "SOV_005"
+    },
+    {
+      "file": "receipts/live_pillars/PILLAR_RUN_20260421T204906Z.json",
+      "hash": "a80ca3bebcf6213c2d8fe40d43c61984172a200bc13dea0e02ec65cc348ab94b",
+      "pillar": "PILLAR_RUN"
+    }
+  ],
+  "sov_001": {
+    "coverage_ratio": 2.379701,
+    "liquidity_buffer": 0.579779,
+    "oracle_stale": false,
+    "receipt_hash": "ff40af2ee94b710577b659155fcd80d769c002009484c0a0ea7ccc35b83a5196",
+    "subtype": "PASS",
+    "vault_paused": false,
+    "verdict": "PASS",
+    "violations": []
+  },
+  "sov_003": {
+    "fail_count": {
+      "economic": 0,
+      "structural": 1,
+      "testnet_env": 1,
+      "total": 2
+    },
+    "fail_reasons": {
+      "economic": [],
+      "structural": [
+        "I4_concentration"
+      ],
+      "testnet_env": [
+        "I11_runway_days"
+      ]
+    },
+    "mint_throttle": 0.0,
+    "mode": "RECOVERY",
+    "oracle_stale": false,
+    "receipt_hash": "249cefcd5da3f5ff92a44d7abdb2acfc3c948a8885eb11d85e79e972b5ea931f",
+    "scenario_id": "SOV_003_LIVE_CHAIN_20260421T204906Z",
+    "vault_paused": false,
+    "verdict": "FAIL"
+  },
+  "sov_005": {
+    "master_hash": "3d0a293faf2876f95340c1f5934211129604efed49e07443b799bb7bcf6e5b76",
+    "run_id": "SOV_005_LIVE_CHAIN_20260421T204907Z",
+    "scenario_count": 3,
+    "scenarios": [
+      {
+        "hash": "e14b24f195b7e6bd1307879df69c0ec5ed52e4ed1e4844bc7e4349b3349d661d",
+        "id": "SOV_005_LIQUIDITY_DRAIN_CASCADE_V1_LIVE",
+        "pass": true
+      },
+      {
+        "hash": "b10fcf9446696f22ad144020026aa465b4f86f9a71c10551be54853a36f8a5f7",
+        "id": "SOV_005_PEG_SHOCK_DEFENSE_V1_LIVE",
+        "pass": true
+      },
+      {
+        "hash": "5945f93e7999faebd0b69827ed6be9bdf76d4f4b8802b7c6b5515c1b511acc1a",
+        "id": "SOV_005_CAPITAL_DEPLETION_WATERFALL_V1_LIVE",
+        "pass": true
+      }
+    ],
+    "verdict": "PASS"
+  },
+  "timestamp_utc": "2026-04-21T20:49:07Z",
+  "verdict_rationale": "SOV_003 testnet/structural only — 1 testnet_env, 1 structural",
+  "version": "1.0"
+}
