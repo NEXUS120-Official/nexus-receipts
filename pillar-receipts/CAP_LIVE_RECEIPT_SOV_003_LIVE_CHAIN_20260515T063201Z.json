@@ -1,0 +1,142 @@
+{
+  "chain": {
+    "block_number": 268586394,
+    "collateral_ratio": 2.317062,
+    "eth_price_usd": 2254.37603355,
+    "liquidation_engine_paused": false,
+    "oracle_stale": false,
+    "total_collateral_eth": 8.223973857580988,
+    "total_debt_nxusd": 8001.4808,
+    "vault_paused": false
+  },
+  "inputs": {
+    "HAIRCUT_FLOOR_OK": true,
+    "HAIRCUT_SCHEDULE_HASH_OK": true,
+    "LCR": 2.317062,
+    "LCR_1D": 2.317062,
+    "LCR_30D": 2.317062,
+    "LCR_7D": 2.317062,
+    "LIABILITIES": 8001.4808,
+    "MATURITY_MISMATCH": 0.0,
+    "MAX_ASSET_SHARE": 1.0,
+    "NAV": 18539.929565,
+    "PEG_RISK": false,
+    "REFLEXIVITY_RISK": false,
+    "RUNWAY_DAYS": 10.54,
+    "RWA": 8001.4808,
+    "STRESS_BUFFER": 0.081706
+  },
+  "observed": {
+    "checks": [
+      {
+        "msg": "NAV=18539.929565 LIAB=8001.4808",
+        "name": "I1_solvency_NAV_ge_LIAB",
+        "ok": true
+      },
+      {
+        "msg": "CCR=2.3170623073919017 MIN=1.05",
+        "name": "I2_CCR_ge_CCR_MIN",
+        "ok": true
+      },
+      {
+        "msg": "LCR=2.317062 MIN=1.0",
+        "name": "I3_LCR_ge_LCR_MIN",
+        "ok": true
+      },
+      {
+        "msg": "max=1.0 lim=0.35",
+        "name": "I4_concentration",
+        "ok": false
+      },
+      {
+        "msg": "LEV=0.4315809707877928 lim=0.95",
+        "name": "I5_leverage",
+        "ok": true
+      },
+      {
+        "msg": "haircut_floor_ok required",
+        "name": "I6_haircut_floor",
+        "ok": true
+      },
+      {
+        "msg": "LCR_1D=2.317062 min=1.1",
+        "name": "I10_LCR_1D",
+        "ok": true
+      },
+      {
+        "msg": "LCR_7D=2.317062 min=1.05",
+        "name": "I10_LCR_7D",
+        "ok": true
+      },
+      {
+        "msg": "LCR_30D=2.317062 min=1.0",
+        "name": "I10_LCR_30D",
+        "ok": true
+      },
+      {
+        "msg": "runway=10.54 min=30.0",
+        "name": "I11_runway_days",
+        "ok": false
+      },
+      {
+        "msg": "mm=0.0 max=0.15",
+        "name": "I12_maturity_mismatch",
+        "ok": true
+      },
+      {
+        "msg": "haircut_schedule_hash_ok required",
+        "name": "I13_haircut_schedule_hash",
+        "ok": true
+      },
+      {
+        "msg": "CAR=1.3170623073919014 warn=0.02",
+        "name": "S1_CAR_ge_warn",
+        "ok": true
+      },
+      {
+        "msg": "buf=0.081706 min=0.03",
+        "name": "S2_stress_buffer",
+        "ok": true
+      },
+      {
+        "msg": "PEG_RISK=False",
+        "name": "S3_peg_risk_flag",
+        "ok": true
+      },
+      {
+        "msg": "REFLEXIVITY_RISK=False",
+        "name": "S4_reflexivity_flag",
+        "ok": true
+      }
+    ],
+    "decision": "FAIL",
+    "mint_throttle": 0.0,
+    "mode": "RECOVERY"
+  },
+  "pass": false,
+  "policy_params": {
+    "CAR_WARN": 0.02,
+    "CCR_MIN": 1.05,
+    "LCR_MIN": 1.0,
+    "LCR_MIN_1D": 1.1,
+    "LCR_MIN_30D": 1.0,
+    "LCR_MIN_7D": 1.05,
+    "MAX_CONCENTRATION": 0.35,
+    "MAX_LEVERAGE": 0.95,
+    "MAX_MATURITY_MISMATCH": 0.15,
+    "RUNWAY_MIN_DAYS": 30.0,
+    "STRESS_BUFFER_MIN": 0.03
+  },
+  "receipt_hash": "c4aa0de80fd00b68f2045b58ea6184f849e7cf800d93ed3c0dd34173b33abbb0",
+  "scenario_id": "SOV_003_LIVE_CHAIN_20260515T063201Z",
+  "source": "LIVE_CHAIN",
+  "suite_id": "SOV_003_CAPITAL_ADEQUACY_LAW_V1",
+  "system_fingerprint": {
+    "cwd": "/home/runner/work/nexus-120-engine/nexus-120-engine",
+    "fingerprint_hash": "453bf0405f97192c4c0f9ecb6cd231f14496dcfcb523f204d1d664bf14987d61",
+    "git_head": "ad41bc216a344946c7821ab0e600ef14119ddee7",
+    "platform": "Linux-6.17.0-1010-azure-x86_64-with-glibc2.39",
+    "python": "3.12.13"
+  },
+  "timestamp_utc": "2026-05-15T06:32:01Z"
+}
