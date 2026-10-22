@@ -1,0 +1,44 @@
+{
+  "chain": {
+    "block_number": 321630932,
+    "collateral_ratio": 2.505946,
+    "eth_price_usd": 2438.15,
+    "oracle_stale": false
+  },
+  "master_hash": "0f04c9e56b2e3cff3054d0da1873aef3c7d88be033da26d43b211983ae968ab7",
+  "pass": true,
+  "run_id": "SOV_005_LIVE_CHAIN_20261022T054331Z",
+  "scenarios": [
+    {
+      "pass": true,
+      "receipt_hash": "27c62a4fec7a486c826886949de58f2b0e135f72e685d66cd295ac6eebaa947a",
+      "scenario_id": "SOV_005_LIQUIDITY_DRAIN_CASCADE_V1_LIVE",
+      "timeline_hash": "25c0bdcec05e2799b59d0476441de6a18ac5b4d28d81fe1f23357ed71c56310d",
+      "timeline_hash_alg": "sha256"
+    },
+    {
+      "pass": true,
+      "receipt_hash": "ace72ba1efeed721470b24fcb032b8fc1828807d48c61d34a24764ee4b7fb020",
+      "scenario_id": "SOV_005_PEG_SHOCK_DEFENSE_V1_LIVE",
+      "timeline_hash": "6cc53b7854448f30ae57ffb237777b64f4a15fdde2f189430b3128416613a597",
+      "timeline_hash_alg": "sha256"
+    },
+    {
+      "pass": true,
+      "receipt_hash": "112b831a38ba7bcebf9f459f6b97c5d7e24ca883b54a4e51bc3b2655462b136b",
+      "scenario_id": "SOV_005_CAPITAL_DEPLETION_WATERFALL_V1_LIVE",
+      "timeline_hash": "627de7e9a2f5379bd4f0ae169f27e2bf8ca7b8b3e3e4ec09d0f11eda6e33da87",
+      "timeline_hash_alg": "sha256"
+    }
+  ],
+  "source": "LIVE_CHAIN",
+  "suite_id": "SOV_005_FULL_5Y_STRESS_LATTICE_V1",
+  "system_fingerprint": {
+    "cwd": "/home/runner/work/nexus-120-engine/nexus-120-engine",
+    "fingerprint_hash": "c12e87e9febc560d29c5175d04d89595fde20cd50d187be9edaedcecdbed67e9",
+    "git_head": "004f71a5df3269ecce80ff1858cb92824e5f027d",
+    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "python": "3.12.15"
+  },
+  "timestamp_utc": "2026-10-22T05:43:31Z"
+}
